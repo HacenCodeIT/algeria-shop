@@ -3,6 +3,7 @@ import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import LanguageSwitcher from './LanguageSwitcher';
 import { useLanguage } from '../context/LanguageContext';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
     const { t } = useLanguage();
@@ -21,7 +22,7 @@ const Navbar = () => {
         }}>
             <div className="container nav-container">
                 <Link to="/" style={{ display: 'flex', alignItems: 'center' }} onClick={closeMenu}>
-                    <img src="/logo.png" alt="AlgeriaShop" style={{ height: '80px', maxHeight: '80px', objectFit: 'contain' }} />
+                    <img src={logo} alt="AlgeriaShop" style={{ height: '80px', maxHeight: '80px', objectFit: 'contain' }} />
                 </Link>
 
                 {/* Mobile Menu Button */}
