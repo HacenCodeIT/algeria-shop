@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import LanguageSwitcher from './LanguageSwitcher';
 import { useLanguage } from '../context/LanguageContext';
 import logo from '../assets/logo.png';
 
@@ -37,7 +36,6 @@ const Navbar = () => {
                 <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
                     <Link to="/" style={{ color: 'var(--color-text)', fontWeight: 500 }} onClick={closeMenu}>{t('nav.home')}</Link>
                     <Link to="/products" style={{ color: 'var(--color-text)', fontWeight: 500 }} onClick={closeMenu}>{t('nav.shop')}</Link>
-                    <LanguageSwitcher />
                 </div>
             </div>
             <style>{`

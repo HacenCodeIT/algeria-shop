@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import Navbar from './Navbar';
 import FloatingCart from './FloatingCart';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Layout = () => {
     return (
@@ -20,6 +21,7 @@ const Layout = () => {
                 </div>
             </footer>
             <FloatingCart />
+            <LanguageSwitcher />
         </div>
     );
 };
